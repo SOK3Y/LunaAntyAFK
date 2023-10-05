@@ -1,4 +1,6 @@
 RegisterServerEvent('Luna:afk:kick')
 AddEventHandler('Luna:afk:kick', function()
+    local player = GetPlayerName(source)
     DropPlayer(source, 'Kick - Anty AFK')
+    print('Kick player ' .. player .. ' from the server - Anty AFK')
 end)
